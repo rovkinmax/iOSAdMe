@@ -10,6 +10,7 @@ import UIKit
 import RxSwift
 
 class FirstViewController: UITableViewController {
+    private var rssItem = [RssItem]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,6 +19,8 @@ class FirstViewController: UITableViewController {
         onNext: {
             rssItemArray in
             print("count of rss item = \(rssItemArray.count)")
+            self.rssItem += rssItemArray
+            self.tableView.reloadData()
         }, onError: {
             error in
             print(error)
@@ -35,13 +38,13 @@ class FirstViewController: UITableViewController {
 
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 15
+        return rssItem.count
     }
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("rssCell", forIndexPath: indexPath)
 
-        cell.textLabel?.text = "Row \(indexPath.row)"
+        cell.textLabel?.text = rssItem[indexPath.row].title
         return cell
     }
 }
