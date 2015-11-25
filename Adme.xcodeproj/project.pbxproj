@@ -16,6 +16,7 @@
 		0F7195901C045514004AB1E9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F71958E1C045514004AB1E9 /* LaunchScreen.storyboard */; };
 		0F71959B1C045515004AB1E9 /* AdmeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F71959A1C045515004AB1E9 /* AdmeTests.swift */; };
 		0F7195A61C045515004AB1E9 /* AdmeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F7195A51C045515004AB1E9 /* AdmeUITests.swift */; };
+		2FCD0698936FB8CAD0CDE96F /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FCD04F14ED0A192AD08444A /* Api.swift */; };
 		C6FA4D2159CDD56BBF055F92 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C428E5854975CAE75C8E29 /* Pods.framework */; };
 /* End PBXBuildFile section */
 
@@ -54,6 +55,7 @@
 		0F7195A11C045515004AB1E9 /* AdmeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AdmeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F7195A51C045515004AB1E9 /* AdmeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdmeUITests.swift; sourceTree = "<group>"; };
 		0F7195A71C045515004AB1E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2FCD04F14ED0A192AD08444A /* Api.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
 		306E3E2758330E61CF697C20 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -116,6 +118,7 @@
 				0F71958E1C045514004AB1E9 /* LaunchScreen.storyboard */,
 				0F7195911C045514004AB1E9 /* Info.plist */,
 				0F2602291C045A3000E0B15B /* Model.swift */,
+				2FCD04F14ED0A192AD08444A /* Api.swift */,
 			);
 			path = Adme;
 			sourceTree = "<group>";
@@ -344,6 +347,7 @@
 				0F7195841C045514004AB1E9 /* AppDelegate.swift in Sources */,
 				0F7195861C045514004AB1E9 /* FirstViewController.swift in Sources */,
 				0F26022A1C045A3000E0B15B /* Model.swift in Sources */,
+				2FCD0698936FB8CAD0CDE96F /* Api.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

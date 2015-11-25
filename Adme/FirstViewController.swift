@@ -7,12 +7,21 @@
 //
 
 import UIKit
+import RxSwift
 
 class FirstViewController: UITableViewController {
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        _ = Api.loadRss()
+        .subscribe(
+        onNext: {
+            string in
+            print(string)
+        }, onError: {
+            error in
+            print(error)
+        })
     }
 
     override func didReceiveMemoryWarning() {
@@ -26,7 +35,7 @@ class FirstViewController: UITableViewController {
 
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
+        return 15
     }
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
