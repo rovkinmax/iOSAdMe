@@ -16,8 +16,8 @@ class FirstViewController: UITableViewController {
         _ = Api.loadRss()
         .subscribe(
         onNext: {
-            string in
-            print(string)
+            rssItemArray in
+            print("count of rss item = \(rssItemArray.count)")
         }, onError: {
             error in
             print(error)
